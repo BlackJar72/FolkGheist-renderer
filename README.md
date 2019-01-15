@@ -25,4 +25,4 @@ Knightferret Engine 1, followed by the addition of 3D rendering as a sub-system 
 at least.
 
 Anyway, while this will have no further development here, anyone interested is free to use 
-parts of it as they like under the MIT license.
+parts of it as they like under the MIT license should some part be seen as useful.
