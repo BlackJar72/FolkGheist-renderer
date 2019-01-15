@@ -14,8 +14,8 @@ had been written by one guy, in Java, in his spare time, I decided I'd give it a
 considering that Notch might have had far more experience already when he start Minecraft.
 
 Admittedly, the games design itself was flawed -- the plan giving neither the lever of 
-control for expressive "building" play nor challenge much for challenge-oriented players.  
-Beyond that the engine was not well designed to integrate with other game systems, or 
+control for expressive "building" play nor challenge much for challenge-oriented 
+players. Beyond that the engine was not well designed to integrate with other game systems, or 
 even to integrate the planned procedural terrains.
 
 I may make another stab at an engine just to see how much better I can do now (but I might 
