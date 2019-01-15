@@ -1,0 +1,31 @@
+#version 120
+
+uniform sampler2D img;
+varying vec4 color;
+varying vec2 texcoords;
+varying vec3 norm;
+varying vec3 lightDir;
+
+vec4 calcDirLight(vec4 baseColor){
+  vec4 result = baseColor;
+  vec4 col=vec4(0.5, 0.5, 0.5, 1.0);
+  
+  float diffusion = dot(-lightDir,norm);
+  
+  if(diffusion > 0) {
+    result = col*diffusion + baseColor;
+    result.w = baseColor.w;    
+  }  
+  
+  return result;
+}
+
+
+void main() {
+  vec4 texcolor=texture2D(img, texcoords);
+  
+  // The lights need to be made uniforms
+  vec4 totalLight = calcDirLight(vec4(0.5, 0.5, 0.5, 1.0));
+  
+  gl_FragColor = ((texcolor * totalLight) * 0.75) + vec4(0.25, 0.25, 0.25, 0.25);
+}

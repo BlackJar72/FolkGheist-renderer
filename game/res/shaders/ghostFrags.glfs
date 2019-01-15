@@ -1,0 +1,16 @@
+#version 120
+
+uniform sampler2D img;
+varying vec2 texcoords;
+varying vec3 norm;
+varying vec3 lightDir;
+
+
+void main() {
+  vec4 texcolor=texture2D(img, texcoords);
+  
+  texcolor = ((texcolor) * 0.9) + vec4(0.1, 0.1, 0.1, 0.0);
+  texcolor.a = 0.4;
+  
+  gl_FragColor = texcolor;
+}

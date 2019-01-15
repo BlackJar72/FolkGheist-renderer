@@ -1,0 +1,15 @@
+#version 120
+
+uniform vec3 normal;
+uniform mat4 normRot;
+varying vec2 texcoords;
+varying vec3 norm;
+varying vec3 lightDir;
+
+void main() {
+  gl_Position=gl_ModelViewProjectionMatrix*gl_Vertex;
+  
+  lightDir = normalize(vec3(-1.0, -1.0, 0.25));
+  norm=normalize((normRot*vec4(gl_Normal, 1.0)).xyz);
+  texcoords=gl_MultiTexCoord0.xy;
+}

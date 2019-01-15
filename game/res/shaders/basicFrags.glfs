@@ -1,0 +1,50 @@
+#version 120
+
+uniform sampler2D img;
+uniform sampler2D nmap;
+uniform sampler2D spmap;
+varying vec2 texcoords;
+varying vec3 norm;
+varying vec3 lightDir;
+varying mat3 tanmat;
+varying vec3 tlightdir;
+varying vec3 worldPos;
+
+vec4 calcDirLight(vec4 baseColor, vec3 usenorm){
+  vec4 result = baseColor;
+  vec4 col=vec4(0.5, 0.5, 0.5, 1.0);
+  
+  float diffusion = dot(tlightdir,usenorm);
+  
+  if(diffusion > 0) {
+    result = col*diffusion + baseColor;
+    
+    vec4 specColor = vec4(0.0, 0.0, 0.0, 0.0);
+    
+    vec3 dirToEye = normalize(-worldPos);
+    vec3 reflectDir = normalize(reflect(tlightdir,usenorm));
+    float specFactor = dot(dirToEye, reflectDir);
+    specFactor = pow(specFactor, 8);
+    if(specFactor > 0) {
+      specColor = baseColor * specFactor * texture2D(spmap, texcoords).r;
+    }
+    
+    result += specColor;
+    
+    result.w = baseColor.w;
+  }  
+  
+  return result;
+}
+
+
+void main() {
+  //vec2 dspcoords = texcoords.xy + (dirToEye * tanmat).xy * texture2D(dmap, texcoords).r * 0.005 - 0.0025;
+  vec4 texcolor=texture2D(img,  texcoords);
+  vec3 texnorm =(texture2D(nmap, texcoords).rgb * 2.0) - vec3(1.0, 1.0, 1.0);
+  
+  // The lights need to be made uniforms
+  vec4 totalLight = calcDirLight(vec4(0.5, 0.5, 0.5, 1.0), texnorm);
+  
+  gl_FragColor = texcolor * totalLight;
+}
