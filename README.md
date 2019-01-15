@@ -1,4 +1,4 @@
-# FolkGheist Rendering Engine
+# Folkgheist Rendering Engine
 
 This was my first attempt and a "big" software project and my first real attempt at 
 game programming (not counting modding, or my elementary school attempt to clone 
