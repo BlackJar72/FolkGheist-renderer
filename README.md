@@ -2,7 +2,7 @@
 
 This was my first attempt and a "big" software project and my first real attempt at 
 game programming (not counting modding, or my elementary school attempt to clone 
-Space Invaders in Basic).  I has a lot of bad code and worse achitecture, and was 
+Space Invaders in Basic).  It has a lot of bad code and worse achitecture, and was 
 the repo was taken down for long time out of embarrassment.  However, like Digit 
 Span Tester, or some of my small '90's commandline utilities I've come to see it as 
 at least interesting to have around.  It is a thoroughly dead project to say the least.
