@@ -1,0 +1,36 @@
+[FOLKGEIST] Starting to run Folkgeist
+[FOLKGEIST] Starting graphics initializtion / display creation
+[FOLKGEIST] Full screen mode set
+[FOLKGEIST] Display mode 1366x768x24, 60 Hz
+[FOLKGEIST] OpenGL version 3.0 Mesa 10.1.3
+[FOLKGEIST] Reading file: res/shaders/basicVerts.glvs
+[FOLKGEIST] Reading file: res/shaders/basicFrags.glfs
+[FOLKGEIST] Reading file: res/shaders/selVerts.glvs
+[FOLKGEIST] Reading file: res/shaders/selFrags.glfs
+[FOLKGEIST] Reading file: res/shaders/ghostVerts.glvs
+[FOLKGEIST] Reading file: res/shaders/ghostFrags.glfs
+[FOLKGEIST] Setting up keybindings
+[FOLKGEIST] Creating keyboard controls
+[FOLKGEIST] Setting up mouse
+[FOLKGEIST] Loading mesh from res/models/Building1b.obj
+[FOLKGEIST] Loading mesh from res/models/house1.obj
+[FOLKGEIST] Loading texture from res/textures/grass_texture1287b.jpg
+[FOLKGEIST] Loading texture from res/textures/grass_texture1287b-nm.jpg
+[FOLKGEIST] Loading texture from res/textures/grass_texture1287b-spec.jpg
+[FOLKGEIST] Loading texture from res/textures/Building11-normal.jpg
+[FOLKGEIST] Loading texture from res/textures/Building11.png
+[FOLKGEIST] Loading texture from res/textures/Building11-spec.jpg
+[FOLKGEIST] Loading texture from res/textures/house1.png
+[FOLKGEIST] Loading texture from res/textures/house1-nm.png
+[FOLKGEIST] Loading texture from res/textures/house1-spec.png
+[FOLKGEIST] Starting new game
+[FOLKGEIST] Generating city map
+[FOLKGEIST] Creating a new simulator (tick manager)
+[FOLKGEIST] Ending game
+[FOLKGEIST] Ending game logic loop (tick manager / Simulator class)
+[FOLKGEIST] Game stopped
+[FOLKGEIST] Shutting down Folkgeist
+[FOLKGEIST] Disconnecting mouse
+[FOLKGEIST] Disconnecting keyboard controls
+[FOLKGEIST] Shutting down display
+[FOLKGEIST] Terminating
