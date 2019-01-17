@@ -13,7 +13,7 @@ rendering engines, due to a total re-write at one point.  After finding that Min
 had been written by one guy, in Java, in his spare time, I decided I'd give it a try, not 
 considering that Notch might have had far more experience already when he start Minecraft.
 
-Admittedly, the games design itself was flawed -- the plan giving neither the lever of 
+Admittedly, the games design itself was flawed -- the plan giving neither the level of 
 control for expressive "building" play nor challenge much for challenge-oriented 
 players. Beyond that the engine was not well designed to integrate with other game systems, or 
 even to integrate the planned procedural terrains.
